@@ -22,6 +22,12 @@ $ python app.py
 # O servidor inciará na porta:5000 - acesse <http://127.0.0.1:5000/>
 ```
 
+### 🎲 Como obter o clone desse projeto?  
+```bash
+# Clone do projeto
+git clone https://github.com/souzarogih/PythonServiceDefault.git
+```
+
 ### URL Aplicação Local
 http://127.0.0.1:5000/
 

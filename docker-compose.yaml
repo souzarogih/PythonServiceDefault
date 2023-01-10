@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+  api:
+    container_name: service-default-api
+    build:
+      dockerfile: Dockerfile
+      context: .
+    environment:
+      - DATABASE_POSTGRESQL_URL=${DATABASE_URL}
+    volumes:
+      - .:/app/
+    ports:
+      - "5000:5000"
+  db:
+    container_name: python-service-default-db
+    image: postgres:10.13-alpine
+    ports:
+      - "54323:5432"
+    environment:
+      POSTGRES_USER: test
+      POSTGRES_PASSWORD: test
+      POSTGRES_DB: servicedefault
